@@ -130,7 +130,7 @@ def login():
 								request.form['password'],
 								user.pw_hash):
 				login_session['username'] = user.username
-				return render_template('index.html', username=login_session['username'])
+				return render_template('index.html', username = login_session['username'])
 			else:
 				error = "Usuario no Registrado!"
 				return render_template('login.html', error = error)
