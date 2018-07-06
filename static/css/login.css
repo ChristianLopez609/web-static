@@ -1,0 +1,67 @@
+/* General */
+*{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#2C3E50, #1abc9c);
+}
+body {
+    font-size: 18px;
+    line-height: 1.72222;
+    color: #34495e;
+    background-color: #ffffff;
+}
+html, body {
+    margin: 0px;
+    overflow-x: hidden;
+    padding: 0px;
+    width: 100%;
+}
+/* Header */
+
+/* Content */
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.card {
+    background-color: #F7F7F7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    border-radius: 2px;
+   
+}
+.card-container{
+	max-width: 450px;
+	padding: 40px 40px; 
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 40px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.form-signin input[type=email], .form-signin input[type=password], .form-signin input[type=text], .form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Footer */

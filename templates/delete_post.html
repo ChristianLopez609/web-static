@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+
+{% block content %}
+	<div class="container">
+		<div class="jumbotron">
+			<div class="row text-center">
+				<h2>¿Esta seguro que quiere borrar este Post?</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<img class="img-responsive text-center" src="{{url_for('static', filename='imagenes/' + post.imagen)}}">
+				</div>
+				<div class="col-md-6">
+					<div class="col">
+						<h4>{{post.titulo}}</h4>
+					</div>
+					<div class="col">
+						<p>{{post.contenido}}</p>
+					</div>
+					<div class="col">
+						<form action="/delete_post/{{post.id}}" method="POST">
+							<button type="submit" class="btn btn-danger">Yes</button>
+							<a class="btn btn-primary" href="/index" role="button">No</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

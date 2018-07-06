@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href= "{{url_for('static', filename='bootstrap/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}">
+	    
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> <!--Font Awesome / Iconos -->
+
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> <!-- Google Font -->
+
+	<title>Registro</title>
+</head>
+<body>
+	<div class="container vertical-center">
+        <div class="card card-container">
+            <img id="profile-img" class="profile-img-card" src="https://secure.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=250"">
+
+            <form method="POST" accept-charset="UTF-8" class="form-signin">
+
+	            <input type="text" id="username" name="username" class="form-control" placeholder="Nombre" required="" autofocus="">
+	            <input type="email" id="email" name="email" class="form-control" placeholder="Email" required="" autofocus="">
+	            <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña" required="" autofocus="">
+	            
+	            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Crear cuenta
+	            </button>
+	            <br>
+	            <small>
+	                ¿Ya tienes una cuenta?
+	                <a href="/login">
+	                    <strong>Accede desde aquí</strong>
+	                </a>
+	            </small>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+{% block content %}
+	<div class="container">
+		<div class="jumbotron">
+			<form method="POST" enctype=multipart/form-data>
+                <h2>Crear Curso</h2>
+
+                <br>
+
+    			<p>Cargar Imagen</p>
+    			<input type=file name="imagen">
+    			<p>Titulo</p>
+    			<input type="text" class="form-control" name="titulo">
+    			<p>Contenido</p>
+    			<input type="text" class="form-control" name="contenido">
+    			<p>URL</p>
+    			<input type="text" class="form-control" name="url">
+
+                <br>
+
+    			<button type="submit" class="btn btn-primary">Subir</button>
+			</form>
+		</div>
+	</div>
+{% endblock %}

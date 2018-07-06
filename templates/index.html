@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href= "{{url_for('static', filename='bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> <!--Font Awesome / Iconos -->
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> <!-- Google Font -->
+
+    <title>Inicio</title>
+
+</head>
+
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 logo-nav text-center">
+                    <img class="logo" src="{{url_for('static', filename='images/logo.svg')}}" alt="" width="40" height="40">
+                </div>
+
+                <div class="col-lg-9 col-md-12 menu-nav">
+                    <ul class="nav justify-content-end">
+                      <li class="nav-item">
+                        <a class="nav-link" href="/index" >Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        {% if username %}
+                        <a class="nav-link" href="/logout">Desconectar</a>
+                        {% else %}
+                        <a class = "nav-link" href="/login">Conectar</a>
+                        {% endif %}
+                      </li>
+                      <li class="nav-item">
+                          {% if username %}
+                          <a class="nav-link active" href="/load_post">Cargar Post
+                          </a>
+                          {% else %}
+                          <a class="nav-link disabled" href="#"></a>
+                          {% endif %}
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <content>
+        <div class="row background-home home-post center-flex">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </content>
+
+    <footer> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="social-footer list-inline text-center">
+                      <li class="list-inline-item">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fab fa-facebook-f"></i>
+                            </span>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fab fa-twitter"></i>
+                              </span>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fab fa-instagram"></i>
+                              </span>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fab fa-youtube"></i>
+                              </span>
+                          </a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

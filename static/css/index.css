@@ -1,0 +1,87 @@
+/* General */
+*{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/* Header */
+
+header{
+	background-color: #34495e;
+}
+
+.logo-nav {
+	margin: auto;
+}
+.menu-nav .nav-link {
+    font-size: 16px;
+    padding: 15px 21px;
+    line-height: 23px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Content */
+
+.background-home {
+    background-image: url(../images/spiration-light.png);
+    background-size: cover;
+    
+}
+.home-post{
+	margin-top: 12px;
+	margin-bottom: 12px;
+    height: auto;
+	/* height: 800px; */
+}
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-jumbotron-trial-banner {
+    background-color: #637a91;
+    border-radius: 6px 6px 0 0;
+    text-align: center;
+    font-weight: 500;
+    padding: 20px;
+    color: #fff;
+}
+
+.login-form {
+    background-color: #edeff1;
+    padding: 24px 23px 20px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.login-form .login-field-icon {
+    font-size: 16px;
+    position: absolute;
+    right: 15px;
+    top: 3px;
+}
+
+.card {
+    margin-right: 20px;
+    margin-bottom: 15px;
+    width: 15rem;
+}
+
+.card-img-top{
+
+}
+
+.card-body .card-title .card-text{
+
+}
+
+/* Footer */
+
+footer{
+	background-color: #34495e;
+}
+
+.social-footer{
+	margin: auto;
+}
